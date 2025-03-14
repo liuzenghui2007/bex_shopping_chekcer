@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Shopping Domain Checker",
+    "version": "1.0",
+    "description": "Check if a domain is a shopping site using Google search results.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "tabs"
+    ],
+    "host_permissions": [
+      "https://www.googleapis.com/*"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "64": "icon-64.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
