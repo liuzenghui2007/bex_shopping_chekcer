@@ -47,7 +47,6 @@ async function searchGoogle(domain) {
               },
             },
             (results) => {
-              chrome.tabs.remove(tab.id); // Close the tab after extraction
               if (chrome.runtime.lastError || !results || !results[0]) {
                 reject("Failed to extract results");
               } else {
